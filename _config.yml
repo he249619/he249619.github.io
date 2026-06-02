@@ -1,3 +1,9 @@
 theme: jekyll-theme-cayman
 title: Lalo's homepage
-description: Bookmark this to keep an eye on my project updates!
+include: ["index.md"]
+description: [Documentation]
+
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
