@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-dinky
 title: Lalo's homepage
 include: ["README.md"]
 description: [Documentation]
