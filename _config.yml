@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-leapday
 title: Lalo's homepage
 include: ["README.md"]
 description: [Documentation]
