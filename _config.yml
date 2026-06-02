@@ -1,4 +1,4 @@
-theme: jekyll-theme-leapday
+theme: jekyll-theme-leap-day
 title: Lalo's homepage
 include: ["README.md"]
 description: [Documentation]
