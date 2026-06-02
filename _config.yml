@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: Lalo's homepage
-include: ["index.md"]
+include: ["README.md"]
 description: [Documentation]
 
 
