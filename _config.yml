@@ -1,6 +1,5 @@
 theme: jekyll-theme-leap-day
 title: "Lalo's Homepage"
-include: ["README.md"]
 description: "Project Documentation"
 
 
