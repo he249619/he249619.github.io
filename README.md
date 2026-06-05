@@ -1,6 +1,4 @@
 ---
-title: "Hilario Esparza | ECE | Robotics"
-description: "Project Documentation"
 ---
 
 # About Me
