@@ -1,3 +1,6 @@
+title: "ECE 4160: Fast Robots"
+description: "Project Documentation of Lalo Esparza's ECE 4160 Labs"
+
 # About Me
 
 <div style="display: flex; align-items: center; gap: 20px;">
