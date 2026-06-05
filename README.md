@@ -6,7 +6,9 @@
     My name is [Hilario (Lalo) Esparza](https://www.linkedin.com/in/hilario-esparza/), and I am an engineering student attending Cornell University. I recently graduated with my B.S. in Electrical and Computer Engineering from Cornell, and I am now completing my M.Eng. in Systems Engineering, with a focus on robotics. While I have many interests, I find robotics to be a wonderful blend of controls, state estimation, cyber-physical systems, and hardware and sofrware development and debugging. Particularly, I find swarm, bio-inspired, and field robotics to be very intruiging fields with loads of potential for the automotive, space, agriculture, and research industries.
   </div>
 </div>
-
+[Hilario (Lalo) Esparza](https://www.linkedin.com/in/hilario-esparza/)
+[Hilario Esparza](https://www.linkedin.com/in/hilario-esparza/)
+[DigiDrum](https://www.youtube.com/watch?v=fSZf4prnDR0)
 # Projects
 
 This will be updated as I start and complete more projects!
