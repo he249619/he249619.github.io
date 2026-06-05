@@ -1,5 +1,5 @@
 --- 
-title: "My Website"
+title: "Lalo's Homepage"
 description: "Project Documentation"
 layout: default
 ---
