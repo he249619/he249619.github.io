@@ -1,7 +1,7 @@
 theme: jekyll-theme-leap-day
-title: Lalo's homepage
+title: Lalo's Homepage
 include: ["README.md"]
-description: [Documentation]
+description: [Project Documentation]
 
 
 markdown: kramdown
