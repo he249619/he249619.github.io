@@ -37,7 +37,7 @@ The following is a complete list of the STEM courses that I have taken. Some of 
 * ECE 3150: Microelectronics
 * ECE 4370: Photonics
 * ECE 4380: Electromagnetic Materials
-* [BEE 3900: Bio-Robotics](#BEE-3900:-Bio-Robots)
+* [BEE 3900: Bio-Robotics](#bee-3900:-bio-robots)
 * ECE 4760: Digital Systems Design with Microcontrollers
 * ECE 4770: Foundation of Robotics
 * ECE 4160: Fast Robots
