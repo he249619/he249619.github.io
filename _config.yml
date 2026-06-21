@@ -1,4 +1,5 @@
-theme: jekyll-theme-leap-day
+# theme: jekyll-theme-leap-day
+theme: jekyll-theme-architect
 title: "Lalo's Homepage"
 include: ["index.md"]
 description: "Project Documentation"
