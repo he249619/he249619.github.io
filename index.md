@@ -22,4 +22,4 @@ layout: default
 * Li-Air Battery Electrolyte Research
 * Non-linear Control for a Tethered Robot Swarm
 * Amphibious Robot for Wetland Exploration
-* A Custom Leaf Press
+* A Custom Flower Press
