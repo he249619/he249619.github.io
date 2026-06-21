@@ -1,9 +1,3 @@
---- 
-<!-- title: "Lalo's Homepage" -->
-description: "Project Documentation"
-layout: default
----
-
 # About Me
 
 <div style="display: flex; align-items: center; gap: 20px;">
