@@ -1,5 +1,5 @@
 --- 
-title: "About Me"
+title: "Home"
 description: "Project Documentation"
 layout: default
 ---
