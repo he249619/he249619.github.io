@@ -16,10 +16,10 @@ layout: default
 # Projects
 
 * [A Fast Robot Car](https://hilarioesparza.github.io/fastrobots-2026/)
-* Armold: My 3-DOF Robot Arm
-* Bio-Robotic Gardner
-* PID Controlled Drone Motor
+* [Armold: My 3-DOF Robot Arm](Pages/armold.md)
+* [A Bio-Robotic Gardner](Pages/bee3900.md)
+* [A PID Controlled Drone Motor](Pages/drone_motor.md)
 * Li-Air Battery Electrolyte Research
 * Non-linear Control for a Tethered Robot Swarm
 * Amphibious Robot for Wetland Exploration
-* Custom Leaf Press
+* A Custom Leaf Press
