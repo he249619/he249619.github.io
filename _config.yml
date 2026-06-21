@@ -1,7 +1,7 @@
 # theme: jekyll-theme-leap-day
 theme: minima
 title: "Hilario Esparza"
-include: ["index.md"]
+include: ["home.md"]
 description: "Project Documentation"
 
 
