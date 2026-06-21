@@ -4,7 +4,6 @@ description: "Project Documentation"
 layout: default
 ---
 
-
 # About Me
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -14,13 +13,7 @@ layout: default
   </div>
 </div>
 
-# Projects
+Click [here](Pages/courses.md) to see some of the courses I have taken.
 
-* [A Fast Robot Car](https://hilarioesparza.github.io/fastrobots-2026/)
-* [Armold: My 3-DOF Robot Arm](Pages/armold.md)
-* [A Bio-Robotic Gardner](Pages/bee3900.md)
-* [A PID Controlled Drone Motor](Pages/drone_motor.md)
-* Li-Air Battery Electrolyte Research
-* Non-linear Control for a Tethered Robot Swarm
-* Amphibious Robot for Wetland Exploration
-* A Custom Flower Press
+Click [here](Pages/projects.md) to see some of the projects that I have worked on.
+
