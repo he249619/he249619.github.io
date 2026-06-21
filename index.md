@@ -1,5 +1,5 @@
 --- 
-title: "Lalo's Homepage"
+<!-- title: "Lalo's Homepage" -->
 description: "Project Documentation"
 layout: default
 ---
