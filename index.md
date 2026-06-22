@@ -13,6 +13,9 @@ layout: default
   </div>
 </div>
 
+
+
+
 Click [here](Pages/courses.md) to see some of the courses I have taken.
 
 Click [here](Pages/projects.md) to see some of the projects that I have worked on.
