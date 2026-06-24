@@ -46,11 +46,11 @@ The joysticks need to be supplied with 5V, so I powered both in parallel through
 
 The camera, an EMEET SmartCam C960, was powered directly from my laptop via a USB connection. This connection additionally streamed the camera feed from the device onto my computer. No additional power supply or circuitry was needed to use this camera. It was set up off to the side of the robotic arm, and its position relative to the base of the robot was measured in inches.
 
-####Actuators
+#### Actuators
 
 The only actuators in my system, the servo motors, were used for the arm mechanics to make the arm move. This movement was achieved by changing the angles at which the servo motors were set to.
 
-#####Servo Motor Setup
+##### Servo Motor Setup
 
 For actuation, I used four MG996R servo motors. Each motor has a stall torque of 11kgfcm when powered with 6V, an operating voltage level between 4.8V and 7.2V, a running current of 500mA and a stall current of 2.5A (at 6V), a 180° range, and a mass of 55 g. Due to their potential to draw high current, as well as my desire to operate them at 6V in order to get the highest amount of torque out of them, it would have been unwise for me to try to power these servos through the Pico 2 W. Instead, I purchased an AC to DC converter, taking in power from a standard US wall outlet (120VAC, 60Hz) and converting it to a 6VDC source with a maximum supply of 10A. Given that I had four servo motors that could theoretically each pull 2.5A, this barely met the required power configuration. However, it is unlikely in my robotic arm that any of the servos would be approaching their stall torque, let alone all of them at once, because the maximum amount of torque that any of them will experience is less than 11kgf*cm. I know this because the moment arms of the robot, as well as the mass of the servos and linkages, are too small to surpass this threshold. This was checked mathematically. Additionally, in its current state, the arm does not pick anything up.
 
@@ -60,7 +60,7 @@ To control the angle at which the servo motor turned to, each motor had to recei
 
 # <img src="Images/Armold/armold_arm.png" style="max-width:90%"/>
 
-###Software
+### Software
 
 At the heart of this program lies the servo movement loop. This loop continuously runs, calculating the error between the current angle of each motor and that motor’s goal angle, and then slowly moving the servo closer to the goal angle while also updating the servo’s current angle. The error was multiplied by a constant in order to properly scale the effect of the error, and this was tuned based on trial and error while visualizing the speed and stability of the servo movement.
 
@@ -204,13 +204,13 @@ async def on_command(payload, writer):
 
 This mode of operation continued until the user pressed the button once again, and then the operation mode switched. This means that the sensor input now changes the target angles of the servos, and even if the camera detected an AprilTag, the laptop would not run IK on its position and it would not send over new target angles. This mode of operation continued until the button was pressed once again, and so on and so forth.
 
-###Requirements
+### Requirements
 
-####Wireless Communication
+#### Wireless Communication
 
 I established a TCP connection between the Pico 2 W and my personal laptop to fulfill the wireless communication requirement. Both the Pico 2 W and my laptop were able to both send and receive data via this TCP connection. This was used to allow the Pico 2 W to inform my laptop when it should do IK on the AprilTag position and when not to, and it allowed my laptop to send servo angles to the Pico 2 W when the IK was being used.
 
-####Wired Communication
+#### Wired Communication
 
 I established an I2C connection between the MPU6050 and the Pico 2 W over I2C channel 0 with SDA coming from GPIO 8 and SCL coming from GPIO 9 at 400kHz. After calculating and low-pass filtering the roll of the IMU, I divided the output by 5 so that the goal angle of the wrist servo only changed with small increments for larger changes in roll. Additionally, I created a deadband where a roll of 5 degrees would cause no change in the servo goal angle.
 
@@ -220,24 +220,26 @@ Both the IMU and the joysticks were read at a frequency of 50Hz.
 
 The button provided a digital input into GPIO 6. It allowed the user to toggle between manual operation and AprilTag detection with numerical IK operation.
 
-####Analog-to-Digital Conversion
+#### Analog-to-Digital Conversion
 
 I use the three GPIO accessible ADCs on the Pico 2 W in order to take in the analog voltages from the joysticks and convert it into a usable digital signal, which I further process via a low-pass filter and scaling. The purpose of this was described in the “Wired Communication” section above.
 
-####Digital-to-Analog Conversion
+#### Digital-to-Analog Conversion
 
 I do four separate Digital-to-Analog conversions. Each conversion is done to produce a separate PWM signal, which is then sent to one of the four servo motors. These PWM signals have a base frequency of 50 Hz, and a duty cycle from about 1ms to 2ms, corresponding to an operating range of about 0° to 180°. The exact duty cycle for these angles was a little bit different for each servo, but in general they fell in about this range. I use the PWM signals to change the angles at which the servos in the arm are set, therefore moving the position of the end effector.
 
-####State Estimation/Filtering
+#### State Estimation/Filtering
 
 I low-pass filter all of the joystick readings, as well as the acceleration data. For the joysticks, I use ɑ=0.4, and for the IMU I use ɑ=0.3. These values allowed me to reduce the large amount of noise in both signals while also not accumulating too much delay. This was important because it was functionally important for the user to feel that the arm is reacting in real time to their manipulation of the roll of the IMU and the joysticks.
 
-####Feedback Control
+#### Feedback Control
 
 For both the manual operation mode and the AprilTag detection operation mode, each servo motor moved to their goal angles by moving in a way that reduced the error between their current angle and their goal angle. In this sense, this was similar to a proportional controller since the movement speed was dependent on the error. If the error was zero, the servo would not move. However, I could not actually sense the current angles of any of the motors because I could not access their internal potentiometers, so there was no direct sensor feedback on the servo angles. There was some sort of indirect feedback when operating in the AprilTag detection operation because the goal servo angles would change so that the arm’s end effector would be within the allowable buffer zone around the center of the AprilTag.
 
 Inside each servo motor there exists its stand alone PID controller so that the servo moves to the correct angle as defined by the incoming PWM signal. However, I did not have access to alter this PID loop, so I can’t count it as feedback control that I implemented, even if it was present.
 
-###System Level Diagram
+### System Level Diagram
 
 # <img src="Images/Armold/armold_system_diagram.png" style="max-width:90%"/>
+
+
