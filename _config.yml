@@ -4,6 +4,10 @@ title: "Hilario Esparza"
 include: ["index.md"]
 description: "Project Documentation"
 
+header_pages:
+  - Pages/courses.md
+  - Pages/projects.md
+  - index.md
 
 markdown: kramdown
 kramdown:
