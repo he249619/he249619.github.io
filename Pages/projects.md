@@ -7,7 +7,7 @@ layout: default
 Here is a list of some of the projects that I have worked on, each linked to a new page with further project descriptions.
 
 
-* [Fast Robot Car](https://hilarioesparza.github.io/fastrobots-2026/)
+* [Fast Robot Car](Projects/fast_robots.md)
 * [Armold: My Robot Arm](Projects/armold.md)
 * Plant Picking/Sorting Mobile Robot
 * PID Controlled Drone Motor
