@@ -8,7 +8,7 @@ Here is a list of some of the projects that I have worked on, each linked to a n
 
 
 * [Fast Robot Car](https://hilarioesparza.github.io/fastrobots-2026/)
-* [Armold: My Robot Arm](https://youtu.be/8_QH_XWPAGs)
+* [Armold: My Robot Arm](Projects/armold.md)
 * Plant Picking/Sorting Mobile Robot
 * PID Controlled Drone Motor
 * Non-Linear Control and Emergent Behavior for a Tethered Robot Swarm
