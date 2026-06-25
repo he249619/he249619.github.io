@@ -1,3 +1,8 @@
+--- 
+title: "Armold"
+description: "Project Documentation a Robotic Arm"
+layout: default
+---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8_QH_XWPAGs" title="ECE 4160: Lab 8 Fast Drift" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> 
 
