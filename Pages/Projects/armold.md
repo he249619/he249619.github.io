@@ -10,11 +10,19 @@ layout: default
 
 ## Non-Technical Overview
 
-"Armold" is the name of my robot arm project. You can move the arm by either playing with joysticks and tilting the controller I built, or by using a camera to detect an AprilTag and the arm tries to go wherever the AprilTag is.
+"Armold" is the name of my robot arm project. You can move the arm by either playing with joysticks and tilting the controller I built, or by using a camera to detect an AprilTag (which looks like a QR code) and the arm tries to go wherever the AprilTag is.
 
 ## Technical Overview
 
-For my final project of SYSEN 5410, I decided to build a simple, 4-DOF robotic arm. This is an independent project that I had been working on for a couple of months, and this class helped me make it a reality.
+* [Introduction](#Introduction)
+* [Hardware: Sensors, Actuators](#Hardware)
+* [Software: Servo Control, TCP, Numerical IK](#Software)
+* [Brief Technical Aspects](#Brief-Technical-Aspects)
+
+### Introduction
+
+
+For my final project of SYSEN 5410, I decided to build a simple, 3-DOF robotic arm. This is a continuation of an independent project that I had been working on for a couple of months, and this class helped me get a lot done on it.
 
 The arm is made up of four separate servo motors, and changing the angles at which the servo motors are set changes the (x,y,z) position of the arm’s end effector in the global reference frame. The arms reachable domain is essentially a hemisphere centered at the base of the robot arm, which is stationary.
 
@@ -64,7 +72,7 @@ I powered all four servos in parallel to the output of this power supply, and ac
 
 To control the angle at which the servo motor turned to, each motor had to receive its own PWM signal. I used GPIO 13 to output this analogue signal for the base servo, GPIO 18 for the shoulder, GPIO 16 for the elbow, and GPIO 15 for the wrist. Each of the PWM signals were set to a frequency of 50 Hz, and duty cycles between roughly 1 ms and 2 ms corresponded with the servo angles of 0° and 180°. The above duty cycle range wasn’t fully accurate and needed to be slightly tuned, but that is the general idea.
 
-# <img src="Images/Armold/armold_arm.png" style="max-width:90%"/>
+# <img src="mywebsite/Images/Armold/armold_arm.png" style="max-width:90%"/>
 
 ### Software
 
@@ -194,7 +202,6 @@ async def on_command(payload, writer):
    global currently_pressed
    global target_base, target_shoulder, target_elbow, target_wrist
 
-
    if (payload.get("target") == "servos"):
        theta1 = payload["theta1"]
        theta2 = payload["theta2"]
@@ -210,7 +217,7 @@ async def on_command(payload, writer):
 
 This mode of operation continued until the user pressed the button once again, and then the operation mode switched. This means that the sensor input now changes the target angles of the servos, and even if the camera detected an AprilTag, the laptop would not run IK on its position and it would not send over new target angles. This mode of operation continued until the button was pressed once again, and so on and so forth.
 
-### Requirements
+### Brief Technical Aspects
 
 #### Wireless Communication
 
@@ -246,6 +253,4 @@ Inside each servo motor there exists its stand alone PID controller so that the 
 
 ### System Level Diagram
 
-# <img src="Images/Armold/armold_system_diagram.png" style="max-width:90%"/>
-
-
+# <img src="mywebsite/Images/Armold/armold_system_diagram.png" style="max-width:90%"/>
