@@ -72,7 +72,7 @@ I powered all four servos in parallel to the output of this power supply, and ac
 
 To control the angle at which the servo motor turned to, each motor had to receive its own PWM signal. I used GPIO 13 to output this analogue signal for the base servo, GPIO 18 for the shoulder, GPIO 16 for the elbow, and GPIO 15 for the wrist. Each of the PWM signals were set to a frequency of 50 Hz, and duty cycles between roughly 1 ms and 2 ms corresponded with the servo angles of 0° and 180°. The above duty cycle range wasn’t fully accurate and needed to be slightly tuned, but that is the general idea.
 
-# <img src="Images/Armold/armold_arm.png" style="max-width:90%"/>
+# <img src="Images/Armold/armold_arm.png" style="max-width:70%"/>
 
 ### Software
 
@@ -254,3 +254,4 @@ Inside each servo motor there exists its stand alone PID controller so that the 
 ### System Level Diagram
 
 # <img src="Images/Armold/armold_system_diagram.png" style="max-width:90%"/>
+
