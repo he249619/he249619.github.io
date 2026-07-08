@@ -13,7 +13,7 @@ Here is a list of some of the projects that I have worked on, each linked to a n
 * PID Controlled Drone Motor
 * Non-Linear Control and Emergent Behavior for a Tethered Robot Swarm
 * Li-Air Battery Electrolyte Evaporation Rate Research
-* Flower Press
+* [Flower Press](Projects/flowerpress.md)
 * Dynamic Programming to find the Optimal Strategy to Sell a House
 * Amphibious Robot for Wetland Exploration
 * Extended Kalman Filter for Robot Car with Ackermann Steering
