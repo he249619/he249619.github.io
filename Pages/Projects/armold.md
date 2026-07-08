@@ -253,4 +253,4 @@ Inside each servo motor there exists its stand alone PID controller so that the 
 
 ### System Level Diagram
 
-# <img src="Images/Armold/armold_system_diagram.png" style="max-width:90%"/>
+# <img src="Pages/Images/Armold/armold_system_diagram.png" style="max-width:90%"/>
