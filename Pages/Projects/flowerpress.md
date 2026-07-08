@@ -18,15 +18,29 @@ I started the project by scribbling down some ideas and drawings about what I wa
 <img src="Images/FlowerPress/drawing.jpg" alt="Centered Image" style="max-width:50%"> 
 </p> 
 
-Trying something
-
-# <img src="Images/FlowerPress/drawing.jpg" style="max-width:90%"/>
-
 I wanted the press to have multiple layers so that multiple flora could be pressed at the same time, which is why you see multiple stacks of wood in the bottom left of the above picture.
 
 ## Manufacturing
 
-To build the press, I bought a couple of large pieces of wood.
+To build the press, I bought a couple of large pieces of wood of about the thickness that I wanted the individual parts of the press to be. I then used a table saw to cut the wood into usable chunks, which were about the same length and width as a standard piece of printer paper.
+
+I taped together the best cuts so that their edges aligned as best as they could, and I used a drill press to create the holes for the bolts that would hold the whole contraption together.
+
+<p align="center"> 
+<img src="Images/FlowerPress/taped.jpg" alt="Centered Image" style="max-width:50%"> 
+</p> 
+
+I was then able to use the bolts, washers, and wing nuts to secure everything in place.
+
+<p align="center"> 
+<img src="Images/FlowerPress/cut_raw.jpg" alt="Centered Image" style="max-width:50%"> 
+</p> 
+
+Finally, I used a bandsaw to further line up each of the individual pieces and sandpaper to smooth the entire surface.
+
+<p align="center"> 
+<img src="Images/FlowerPress/rounded.jpg" alt="Centered Image" style="max-width:50%"> 
+</p> 
 
 ## Beautification
 
