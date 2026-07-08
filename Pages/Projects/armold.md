@@ -1,6 +1,6 @@
 --- 
 title: "Armold"
-description: "Project Documentation a Robotic Arm"
+description: "Project Documentation for a Robotic Arm"
 layout: default
 ---
 
