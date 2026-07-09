@@ -6,7 +6,7 @@ layout: default
 
 # Class History
 
-The following is a complete list of the STEM courses that I have taken. Some of them are linked to descriptions further down this page.
+The following is a complete list of the STEM courses that I have taken. Some of them (the ones I did larger projects in), are linked to descriptions further down this page.
 
 ### Math
 
@@ -59,7 +59,9 @@ This lab-based class focused on the hardware and software development and debugg
 
 ### Cyber-Physical Systems
 
-This class applied a systems level approach and understanding to technical concepts I had already been exposed to. We learned about TCP, UDP, and MQTT networking paradigms; signal processing and filtering; Kalman and Bayes filters; and a foundation in computer vision. I used what was learned in this lab to build a prototype robot arm, which I named [Armold](Pages/Projects/armold.md). Armold was a 3DoF robotic arm built with four servo motors, and it had two separate modes of operation. In the first mode, a user could change the angle of each of the servo motors through a physical interface with an IMU and two joysticks. The second mode of operation, and the more exciting one, was to change the position of the end effector of Armold to move to the same position as an AprilTag was, as long as the AprilTag was within reach of the arm. I did this with a camera connected to my laptop, and then transformed the position of the AprilTag in the camera's frame of reference to the global frame of reference. From there, I used numerical inverse kinematics to calculate the necessary servo angles, and used a TCP connection between my laptop and a RP2350 to move the servos smoothly to the new angles. I plan to design a 3D printed arm for this project, instead of using popsicle sticks, so keep an eye out for that!
+This class applied a systems level approach and understanding to technical concepts I had already been exposed to. We learned about TCP, UDP, and MQTT networking paradigms; signal processing and filtering; Kalman and Bayes filters; and were exposed to the very basics of computer vision. I used what was learned in this lab to build a prototype robot arm, which I named [Armold](Projects/armold.md). Armold was a 3DOF robotic arm built with four servo motors, and it had two separate modes of operation. In the first mode, a user could change the angle of each of the servo motors through a physical interface with an IMU and two joysticks. The second mode of operation, and the more exciting one, was to change the position of the end effector of Armold to move to the same position as an AprilTag was, as long as the AprilTag was within reach of the arm. I did this with a camera connected to my laptop, and then transformed the position of the AprilTag in the camera's frame of reference to the global frame of reference. From there, I used numerical inverse kinematics to calculate the necessary servo angles, and used a TCP connection between my laptop and a RP2350 to move the servos smoothly to the new angles. I plan to design a 3D printed arm for this project, instead of using popsicle sticks, so keep an eye out for that!
 
 ### Optimal Control and Decision Theory
+
+This class was all about decision making in stochastic systems. We dove into topics including open-loop and closed-loop control, dynamic programming, Markov Decision Processes (MDP), Partially Observable Markov Decision Processes (POMDP), and approximate dynamic programming. For the final deliverable of this class, I used dynamic programming and approximate dynamic programming to solve the optimal stopping problem of determining when is the best time to sell your home after you have put it on the market based on when you want to sell the house and the offers you get on the house. To see some of the outcomes of that project, click [here](Projects/decisions.md).
 
