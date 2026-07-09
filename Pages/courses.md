@@ -49,7 +49,7 @@ The following is a complete list of the STEM courses that I have taken. Some of 
 
 ### Bio-Robots
 
-In this course, my group and I spent the entire semester designing, building, and debugging a physical robotic system built to autonomously navigate an obstacle course and use computer vision to pick and sort different colored wooden plants. We used an Arduino Mega for motor control, navigation, and LEDs used for debugging. Additionally, we used a Raspberry Pi to communicate with the Arduino, as well as running the computer vision algorithm and controlling a LeRobot robotic arm. I mostly worked on the navigation logic and helping to build the physical robot. To see more about this project, click [here](Projects/biorobots.md).
+In this course, my group and I spent the entire semester designing, building, and debugging a physical robotic system built to autonomously navigate an obstacle course and use computer vision to pick and sort different colored wooden plants. We used an Arduino Mega for motor control, navigation, and LEDs used for debugging. Additionally, we used a Raspberry Pi to communicate with the Arduino, as well as running the computer vision algorithm and controlling a LeRobot robotic arm. I mostly worked on the navigation logic and helping to build the physical robot. To see more about this project, click [here](Projects/bee3900.md).
 
 ### Digital Systems Design Using Microcontrollers
 
