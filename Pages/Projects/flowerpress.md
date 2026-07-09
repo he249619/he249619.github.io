@@ -47,9 +47,9 @@ Finally, I used a bandsaw to further line up each of the individual pieces and s
 After constructing the press, I did multiple rounds of staining the wood to create a rich color. I then bought some flower-themed stencils from Michaels and spray painted patterns onto the top of the press using various colors. To finish it off, I applied several layers of polyurethane to act as a protective coat.
 
 <p align="center"> 
-<img src="Images/FlowerPress/headon.heic" alt="Centered Image" style="max-width:50%"> 
+<img src="Images/FlowerPress/headon.png" alt="Centered Image" style="max-width:50%"> 
 </p> 
 
 <p align="center"> 
-<img src="Images/FlowerPress/fromtheside.heic" alt="Centered Image" style="max-width:50%"> 
+<img src="Images/FlowerPress/fromtheside.png" alt="Centered Image" style="max-width:50%"> 
 </p> 
