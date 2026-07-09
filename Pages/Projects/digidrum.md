@@ -18,7 +18,7 @@ The user can hold a drumstick in either hand and can kick a footpedal, and when 
 
 The system uses a RP2040 microcontroller as the computational power. An IMU is placed on each drum stick in order to estimate the motion of the user’s hand, communicating with the RP2040 through an I2C bus. A DAC is also connected to the RP2040 and communicates via SPI, and audio recordings of a snare, a hi-hat, and a base drum are sent to the DAC via DMA. This output is then played on a set of speakers. 
 
-For a more in-depth discussion and documentation of this project, please visit [this DigiDrum website](Pages/Projects/Images/DigiDrum/ace68_hle37_lag289.html) that my labmates and I created.
+For a more in-depth discussion and documentation of this project, please visit [this DigiDrum website](Images/DigiDrum/ace68_hle37_lag289.html) that my labmates and I created.
 
 ## Personal Contribution
 
