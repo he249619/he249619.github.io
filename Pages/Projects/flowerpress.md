@@ -22,7 +22,7 @@ I wanted the press to have multiple layers so that multiple flora could be press
 
 ## Manufacturing
 
-To build the press, I bought a couple of large pieces of wood of about the thickness that I wanted the individual parts of the press to be. I then used a table saw to cut the wood into usable chunks, which were about the same length and width as a standard piece of printer paper.
+To build the press, I bought a couple of ¾”x2’x4’ pieces of wood. I then used a table saw to cut the wood into usable chunks, which were slightly larger than a standard piece of printer paper.
 
 I taped together the best cuts so that their edges aligned as best as they could, and I used a drill press to create the holes for the bolts that would hold the whole contraption together.
 
@@ -44,3 +44,12 @@ Finally, I used a bandsaw to further line up each of the individual pieces and s
 
 ## Beautification
 
+After constructing the press, I did multiple rounds of staining the wood to create a rich color. I then bought some flower-themed stencils from Michaels and spray painted patterns onto the top of the press using various colors. To finish it off, I applied several layers of polyurethane to act as a protective coat.
+
+<p align="center"> 
+<img src="Images/FlowerPress/headon.heic" alt="Centered Image" style="max-width:50%"> 
+</p> 
+
+<p align="center"> 
+<img src="Images/FlowerPress/fromtheside.heic" alt="Centered Image" style="max-width:50%"> 
+</p> 
