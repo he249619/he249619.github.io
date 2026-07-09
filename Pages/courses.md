@@ -51,7 +51,7 @@ The following is a complete list of the STEM courses that I have taken. Some of 
 
 ### Digital Systems Design Using Microcontrollers
 
-This was a fun lab-based class I took during my undergraduate career at Cornell. The class focused on four different labs, each using different peripherals and concepts to develop interesting systems using an RP2040. In the first lab, we developed a bird song synthesizer, the second lab worked on developing a digital Galton Board, and in the third lab we implemented a pitch PID controller for a drone motor. Out of those three, the PID controller was my favorite, and my lab group was able to get the pitch to be within a ~2% error from its desired value. For the final lab, we got to choose our own system to implement. We decided to create a virtual drum set machine called [DigiDrum](https://www.youtube.com/watch?v=fSZf4prnDR0). Unfortunately, no one in my lab group was particularly musically talented!
+This was a fun lab-based class I took during my undergraduate career at Cornell. The class focused on four different labs, each using different peripherals and concepts to develop interesting systems using an RP2040. In the first lab, we developed a bird song synthesizer, the second lab worked on developing a digital Galton Board, and in the third lab we implemented a pitch PID controller for a drone motor. Out of those three, the PID controller was my favorite, and my lab group was able to get the pitch to be within a ~2% error from its desired value. For the final lab, we got to choose our own system to implement. We decided to create a virtual drum set machine called [DigiDrum](Projects/digidrum.md). Unfortunately, no one in my lab group was particularly musically talented!
 
 ### Fast Robots
 
