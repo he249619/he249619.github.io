@@ -53,3 +53,12 @@ After constructing the press, I did multiple rounds of staining the wood to crea
 <p align="center"> 
 <img src="Images/FlowerPress/fromtheside.png" alt="Centered Image" style="max-width:50%"> 
 </p> 
+
+## Usage
+
+Here is a rose that I was able to press and later frame!
+
+<p align="center"> 
+<img src="Images/FlowerPress/rose.jpg" alt="Centered Image" style="max-width:50%"> 
+</p> 
+
