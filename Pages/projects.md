@@ -9,12 +9,13 @@ Here is a list of some of the projects that I have worked on, each linked to a n
 
 * [Fast Robot Car](Projects/fast_robots.md)
 * [Armold: My Robot Arm](Projects/armold.md)
-* Plant Picking/Sorting Mobile Robot
-* PID Controlled Drone Motor
+* [Plant Picking/Sorting Mobile Robot](Projects/bee3900.md)
+* [PID Controlled Drone Motor](Projects/drone_motor.md)
 * [DigiDrum: A Cyber-Physical Drum Simulator](Projects/digidrum.md)
 * Non-Linear Control and Emergent Behavior for a Tethered Robot Swarm
 * Li-Air Battery Electrolyte Evaporation Rate Research
 * [Flower Press](Projects/flowerpress.md)
-* Dynamic Programming to find the Optimal Strategy to Sell a House
+* [Dynamic Programming to find the Optimal Strategy to Sell a House](Projects/decisions.md)
 * Amphibious Robot for Wetland Exploration
 * Extended Kalman Filter for Robot Car with Ackermann Steering
+
