@@ -62,3 +62,77 @@ Here is a rose that I was able to press and later frame!
 <img src="Images/FlowerPress/rose.jpg" alt="Centered Image" style="max-width:50%"> 
 </p> 
 
+
+
+<!-- Load PyScript assets safely into your Jekyll page -->
+<link rel="stylesheet" href="https://pyscript.net" />
+<script defer src="https://pyscript.net"></script>
+
+<div style="margin: 20px 0; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background: #f9f9f9;">
+  <p><strong>🌸 Flower Press Simulator Terminal:</strong> Click inside to type.</p>
+  
+  <script type="py" terminal worker>
+import time
+
+def run_press_simulator():
+    print("====================================")
+    print("      FLOWER PRESS SIMULATOR        ")
+    print("====================================\n")
+    
+    name = input("Enter your name to start pressing: ")
+    print(f"\nWelcome, {name}! Let's prep the wooden planks.")
+    
+    layers = ["Empty", "Empty", "Empty"]
+    
+    while True:
+        print("\n--- Current Press Status ---")
+        for i, layer in enumerate(layers, 1):
+            print(f"Layer {i}: {layer}")
+        print("----------------------------")
+        
+        print("\nWhat would you like to do?")
+        print("1. Add a flower to a layer")
+        print("2. Tighten wing nuts (Process Pressing)")
+        print("3. Reset press")
+        print("4. Exit simulator")
+        
+        choice = input("Select an option (1-4): ")
+        
+        if choice == "1":
+            try:
+                layer_num = int(input("Which layer (1-3)? "))
+                if 1 <= layer_num <= 3:
+                    flower = input("What flower/leaf are you placing inside? ")
+                    layers[layer_num - 1] = f"Fresh {flower}"
+                    print(f"\n--> Placed {flower} into Layer {layer_num}!")
+                else:
+                    print("\n[Error] Invalid layer number.")
+            except ValueError:
+                print("\n[Error] Please enter a valid number.")
+                
+        elif choice == "2":
+            print("\nTightening bolts and wing nuts...")
+            time.sleep(1)
+            print("Applying even pressure across the 3/4\" wood planks...")
+            time.sleep(1)
+            
+            for i in range(3):
+                if "Fresh" in layers[i]:
+                    layers[i] = layers[i].replace("Fresh", "Perfectly Pressed")
+            print("\n--> Done! Your flora has been preserved.")
+            
+        elif choice == "3":
+            layers = ["Empty", "Empty", "Empty"]
+            print("\n--> Press cleared and reset.")
+            
+        elif choice == "4":
+            print(f"\nThanks for using the simulator, {name}!")
+            break
+        else:
+            print("\n[Error] Invalid choice. Choose 1, 2, 3, or 4.")
+        time.sleep(0.5)
+
+run_press_simulator()
+  </script>
+</div>
+
