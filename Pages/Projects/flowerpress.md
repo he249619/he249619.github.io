@@ -71,15 +71,15 @@ Here is a rose that I was able to press and later frame!
 <div style="margin: 20px 0; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background: #f9f9f9;">
   <p><strong>🌸 Flower Press Simulator Terminal:</strong> Click inside to type.</p>
   
-  <script type="py" terminal worker>
+  <script type="mpy" terminal worker>
 import time
 
-def run_press_simulator():
+async def run_press_simulator():
     print("====================================")
     print("      FLOWER PRESS SIMULATOR        ")
     print("====================================\n")
     
-    name = input("Enter your name to start pressing: ")
+    name = await input("Enter your name to start pressing: ")
     print(f"\nWelcome, {name}! Let's prep the wooden planks.")
     
     layers = ["Empty", "Empty", "Empty"]
@@ -96,13 +96,13 @@ def run_press_simulator():
         print("3. Reset press")
         print("4. Exit simulator")
         
-        choice = input("Select an option (1-4): ")
+        choice = await input("Select an option (1-4): ")
         
         if choice == "1":
             try:
-                layer_num = int(input("Which layer (1-3)? "))
+                layer_num = int(await input("Which layer (1-3)? "))
                 if 1 <= layer_num <= 3:
-                    flower = input("What flower/leaf are you placing inside? ")
+                    flower = await input("What flower/leaf are you placing inside? ")
                     layers[layer_num - 1] = f"Fresh {flower}"
                     print(f"\n--> Placed {flower} into Layer {layer_num}!")
                 else:
